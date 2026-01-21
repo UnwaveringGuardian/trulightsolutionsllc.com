@@ -40,13 +40,36 @@ header{
   gap:16px;
 }
 .brand{display:flex; align-items:center; gap:12px}
+.brand{
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand::before{
+  content:"";
+  position:absolute;
+  left:-6px;          /* horizontal sun position */
+  top:-10px;          /* vertical sun position */
+  width:42px;
+  height:42px;
+  background: radial-gradient(
+    circle,
+    rgba(255,210,0,.65) 0%,
+    rgba(255,210,0,.35) 35%,
+    rgba(255,210,0,.15) 55%,
+    transparent 70%
+  );
+  filter: blur(6px);
+  z-index:0;
+}
+
 .brand img{
   height:44px;
   width:auto;
-  filter:
-    drop-shadow(0 0 6px rgba(255,210,0,.55))
-    drop-shadow(0 0 12px rgba(255,210,0,.35))
-    drop-shadow(0 0 20px rgba(245,130,32,.25));
+  position: relative;
+  z-index:1;
 }
 .brand .name{font-weight:700; letter-spacing:.2px}
 .links{display:flex; gap:14px; flex-wrap:wrap}
