@@ -1,51 +1,63 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>TruLight Solutions LLC</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #0b1c2d;
-      color: #ffffff;
-      text-align: center;
-    }
-    header {
-      padding: 60px 20px;
-    }
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-    }
-    p {
-      font-size: 1.1rem;
-      max-width: 700px;
-      margin: 0 auto;
-      line-height: 1.6;
-    }
-    footer {
-      margin-top: 60px;
-      padding: 20px;
-      font-size: 0.9rem;
-      opacity: 0.8;
-    }
-  </style>
+  <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
-
 <header>
-  <h1>TruLight Solutions LLC</h1>
-  <p>
-    Professional fiber optic installation services focused on quality,
-    reliability, and long-term infrastructure excellence.
-  </p>
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <img src="assets/logo.svg" alt="TruLight Solutions logo" />
+      <div class="name">TruLight Solutions LLC</div>
+    </a>
+    <nav class="links">
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
 </header>
 
+<main class="container">
+  <section class="hero">
+    <h1>Fiber installation done right.</h1>
+    <p>
+      TruLight Solutions supports aerial fiber buildouts with a focus on safety, quality,
+      and clean execution. Built for scale—built for long-term partnerships.
+    </p>
+    <div class="cta">
+      <a class="btn primary" href="contact.html">Request a quote</a>
+      <a class="btn" href="services.html">View services</a>
+    </div>
+  </section>
+
+  <section class="grid">
+    <div class="card">
+      <h3>Aerial build support</h3>
+      <p>Reliable crews, consistent standards, and clear communication from kickoff to closeout.</p>
+    </div>
+    <div class="card">
+      <h3>Safety-first execution</h3>
+      <p>Process-driven operations, documentation, and compliance-minded field practices.</p>
+    </div>
+    <div class="card">
+      <h3>Partner-ready</h3>
+      <p>We operate like a subcontractor you can scale with—clean handoffs, predictable delivery.</p>
+    </div>
+  </section>
+</main>
+
 <footer>
-  © 2026 TruLight Solutions LLC
+  <div class="container">
+    © <span id="y"></span> TruLight Solutions LLC • <a href="contact.html">Contact</a>
+  </div>
 </footer>
 
+<script>
+  document.getElementById('y').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
