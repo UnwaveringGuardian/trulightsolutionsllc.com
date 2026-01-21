@@ -1,9 +1,18 @@
 :root{
-  --bg:#071522;
-  --panel:#0b1c2d;
+  /* TruLight logo palette */
+  --navy:#0B2F54;
+  --blue:#0072BC;
+  --orange:#F58220;
+  --yellow:#FFD200;
+  --gray:#B8B8B8;
+
+  /* Site theme mapping */
+  --bg:#061624;               /* deep background that matches the navy */
+  --panel:#071E33;            /* cards */
   --text:#ffffff;
-  --muted:rgba(255,255,255,.75);
-  --accent:#57c7ff;
+  --muted:rgba(184,184,184,.90);
+  --accent:var(--blue);       /* primary buttons/links */
+  --accent2:var(--orange);    /* secondary accent */
   --border:rgba(255,255,255,.12);
 }
 *{box-sizing:border-box}
