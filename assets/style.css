@@ -50,18 +50,18 @@ header{
 .brand::before{
   content:"";
   position:absolute;
-  left:-6px;          /* horizontal sun position */
-  top:-10px;          /* vertical sun position */
-  width:42px;
-  height:42px;
+  left:-4px;
+  top:-8px;
+  width:36px;
+  height:36px;
   background: radial-gradient(
     circle,
-    rgba(255,210,0,.65) 0%,
-    rgba(255,210,0,.35) 35%,
-    rgba(255,210,0,.15) 55%,
-    transparent 70%
+    rgba(255,210,0,.38) 0%,
+    rgba(255,210,0,.18) 40%,
+    rgba(255,210,0,.08) 60%,
+    transparent 75%
   );
-  filter: blur(6px);
+  filter: blur(8px);
   z-index:0;
 }
 
