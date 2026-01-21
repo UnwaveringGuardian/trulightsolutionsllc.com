@@ -157,3 +157,75 @@ footer{
   .brand .name {
     font-size: 1.05rem;
   }
+/* Footer layout (logo + about left, contact right) */
+.site-footer{
+  margin-top: 56px;
+  border-top: 1px solid rgba(255,255,255,.10);
+  background: rgba(6, 22, 36, .65);
+}
+
+.footer-grid{
+  display: grid;
+  grid-template-columns: 1.4fr .6fr;
+  gap: 28px;
+  padding: 28px 0;
+  align-items: start;
+}
+
+.footer-left{
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.footer-logo{
+  height: 56px;
+  width: auto;
+  flex: 0 0 auto;
+}
+
+.footer-title{
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.footer-about p{
+  margin: 0;
+  color: var(--muted);
+  max-width: 520px;
+  line-height: 1.55;
+  font-size: .95rem;
+}
+
+.footer-right{
+  text-align: left;
+}
+
+.footer-link{
+  display: inline-block;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footer-link:hover{
+  text-decoration: underline;
+}
+
+.footer-bottom{
+  padding: 14px 0 24px;
+  color: rgba(255,255,255,.75);
+  font-size: .9rem;
+}
+
+/* Mobile */
+@media (max-width: 860px){
+  .footer-grid{
+    grid-template-columns: 1fr;
+  }
+  .footer-left{
+    flex-direction: column;
+  }
+  .footer-logo{
+    height: 52px;
+  }
