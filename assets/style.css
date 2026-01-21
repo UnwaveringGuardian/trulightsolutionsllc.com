@@ -157,6 +157,7 @@ footer{
   .brand .name {
     font-size: 1.05rem;
   }
+} 
 /* Footer layout (logo + about left, contact right) */
 .site-footer{
   margin-top: 56px;
@@ -170,6 +171,37 @@ footer{
   gap: 28px;
   padding: 28px 0;
   align-items: start;
+}
+/* Footer logo wrapper so it can use the SAME sun halo technique as header */
+.footer-brand{
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Exact same halo as header (.brand::before) */
+.footer-brand::before{
+  content:"";
+  position:absolute;
+  left:-4px;
+  top:-8px;
+  width:36px;
+  height:36px;
+  background: radial-gradient(
+    circle,
+    rgba(255,210,0,.38) 0%,
+    rgba(255,210,0,.18) 40%,
+    rgba(255,210,0,.08) 60%,
+    transparent 75%
+  );
+  filter: blur(8px);
+  z-index:0;
+}
+
+/* Make sure logo sits above halo */
+.footer-logo{
+  position: relative;
+  z-index: 1;
 }
 
 .footer-left{
@@ -229,3 +261,4 @@ footer{
   .footer-logo{
     height: 52px;
   }
+}
