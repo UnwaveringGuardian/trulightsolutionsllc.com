@@ -148,23 +148,3 @@ footer{
   .grid{grid-template-columns:1fr}
   .hero{padding-top:50px}
 }
-/* Logo contrast helper (improves Tr visibility without changing logo) */
-.brand {
-  position: relative;
-  padding: 6px 10px;
-  border-radius: 8px;
-}
-
-.brand::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    to right,
-    rgba(10, 35, 55, 0.55),
-    rgba(10, 35, 55, 0.15),
-    transparent
-  );
-  border-radius: 8px;
-  z-index: -1;
-}
