@@ -148,3 +148,12 @@ footer{
   .grid{grid-template-columns:1fr}
   .hero{padding-top:50px}
 }
+/* Desktop-only logo size increase */
+@media (min-width: 1024px) {
+  .brand img {
+    height: 52px; /* was ~44px */
+  }
+
+  .brand .name {
+    font-size: 1.05rem;
+  }
