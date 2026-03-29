@@ -41,10 +41,15 @@ header{
   padding:22px 0;   /* Taller header */
   gap:16px;
 }
+
+/* ========================= */
+/* HEADER LOGO + NAV FIX */
+/* ========================= */
+
 .brand{
   display:flex;
   align-items:center;
-  gap:14px;
+  gap:18px;
 }
 
 .brand::before{
@@ -52,7 +57,7 @@ header{
 }
 
 .brand img{
-  height:72px;   /* Bigger base size */
+  height:80px;
   width:auto;
   display:block;
 }
@@ -61,7 +66,39 @@ header{
   font-weight:700;
   letter-spacing:.2px;
   line-height:1.1;
+  font-size:1.05rem;
 }
+
+/* Desktop / Laptop */
+@media (min-width: 1024px) {
+
+  .brand img{
+    height:120px;   /* Large laptop logo */
+  }
+
+  .brand .name{
+    font-size:1.2rem;
+  }
+
+}
+
+/* Mobile */
+@media (max-width: 600px){
+
+  .nav{
+    padding:16px 0;
+  }
+
+  .brand img{
+    height:72px;
+  }
+
+  .brand .name{
+    font-size:.95rem;
+  }
+
+}
+
 .links{display:flex; gap:14px; flex-wrap:wrap}
 .links a{
   padding:8px 9px;
@@ -138,21 +175,7 @@ footer{
   .grid{grid-template-columns:1fr}
   .hero{padding-top:50px}
 }
-/* Desktop-only logo size increase */
-@media (min-width: 1024px) {
-  .brand img {
-    height: 95px;   /* This is what will fix your laptop size */
-  }
 
-  .brand .name {
-    font-size: 1.15rem;
-  }
-}
-
-  .brand .name {
-    font-size: 1.1rem;
-  }
-}
 /* Footer layout (logo + about left, contact right) */
 .site-footer{
   margin-top: 56px;
@@ -230,17 +253,4 @@ footer{
   padding: 14px 0 24px;
   color: rgba(255,255,255,.75);
   font-size: .9rem;
-}
-
-/* Mobile */
-@media (max-width: 600px) {
-
-  .brand img {
-    height: 56px;
-  }
-
-  .brand .name {
-    font-size: .95rem;
-  }
-
 }
