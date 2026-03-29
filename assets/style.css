@@ -38,7 +38,7 @@ header{
   display:flex;
   align-items:center;
   justify-content:space-between;
-  padding:18px 0;   /* slightly taller header */
+  padding:22px 0;   /* Taller header */
   gap:16px;
 }
 .brand{
@@ -52,7 +52,7 @@ header{
 }
 
 .brand img{
-  height:60px;   /* Bigger default size */
+  height:72px;   /* Bigger base size */
   width:auto;
   display:block;
 }
@@ -141,8 +141,13 @@ footer{
 /* Desktop-only logo size increase */
 @media (min-width: 1024px) {
   .brand img {
-    height: 80px;   /* Bigger laptop/desktop logo */
+    height: 95px;   /* This is what will fix your laptop size */
   }
+
+  .brand .name {
+    font-size: 1.15rem;
+  }
+}
 
   .brand .name {
     font-size: 1.1rem;
@@ -188,7 +193,7 @@ footer{
 }
 
 .footer-logo{
-  height: 72px;
+  height: 85px;
   width: auto;
   flex: 0 0 auto;
 }
