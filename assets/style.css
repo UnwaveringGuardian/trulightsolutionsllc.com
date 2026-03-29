@@ -162,30 +162,17 @@ footer{
 }
 /* Footer logo wrapper so it can use the SAME sun halo technique as header */
 .footer-brand{
-  position: relative;
   display: inline-flex;
   align-items: center;
 }
 
-/* Exact same halo as header (.brand::before) */
 .footer-brand::before{
-  content:"";
-  position:absolute;
-  left:-4px;
-  top:-8px;
-  width:36px;
-  height:36px;
-  background: radial-gradient(
-    circle,
-    rgba(255,210,0,.38) 0%,
-    rgba(255,210,0,.18) 40%,
-    rgba(255,210,0,.08) 60%,
-    transparent 75%
-  );
-  filter: blur(8px);
-  z-index:0;
+  display:none;
 }
 
+.footer-logo{
+  display:block;
+}
 /* Make sure logo sits above halo */
 .footer-logo{
   position: relative;
