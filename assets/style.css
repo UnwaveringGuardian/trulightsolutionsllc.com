@@ -39,39 +39,27 @@ header{
   padding:14px 0;
   gap:16px;
 }
-.brand{display:flex; align-items:center; gap:12px}
 .brand{
-  position: relative;
-  display: flex;
-  align-items: center;
-  gap: 12px;
+  display:flex;
+  align-items:center;
+  gap:14px;
 }
 
 .brand::before{
-  content:"";
-  position:absolute;
-  left:-4px;
-  top:-8px;
-  width:36px;
-  height:36px;
-  background: radial-gradient(
-    circle,
-    rgba(255,210,0,.38) 0%,
-    rgba(255,210,0,.18) 40%,
-    rgba(255,210,0,.08) 60%,
-    transparent 75%
-  );
-  filter: blur(8px);
-  z-index:0;
+  display:none;
 }
 
 .brand img{
-  height:44px;
+  height:58px;
   width:auto;
-  position: relative;
-  z-index:1;
+  display:block;
 }
-.brand .name{font-weight:700; letter-spacing:.2px}
+
+.brand .name{
+  font-weight:700;
+  letter-spacing:.2px;
+  line-height:1.1;
+}
 .links{display:flex; gap:14px; flex-wrap:wrap}
 .links a{
   padding:8px 10px;
