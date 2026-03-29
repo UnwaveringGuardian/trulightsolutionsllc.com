@@ -139,13 +139,13 @@ footer{
 /* Desktop-only logo size increase */
 @media (min-width: 1024px) {
   .brand img {
-    height: 52px; /* was ~44px */
+    height: 68px;
   }
 
   .brand .name {
     font-size: 1.05rem;
   }
-} 
+}
 /* Footer layout (logo + about left, contact right) */
 .site-footer{
   margin-top: 56px;
