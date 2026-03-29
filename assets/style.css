@@ -186,7 +186,7 @@ footer{
 }
 
 .footer-logo{
-  height: 56px;
+  height: 72px;
   width: auto;
   flex: 0 0 auto;
 }
@@ -234,6 +234,5 @@ footer{
     flex-direction: column;
   }
   .footer-logo{
-    height: 52px;
-  }
+  height: 62px;
 }
