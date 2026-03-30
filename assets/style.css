@@ -139,7 +139,7 @@ header{
   inset:-40px -20px 0 -20px;
   z-index:-1;
   pointer-events:none;
-  opacity:.45;
+  opacity:.75;
   background:
     linear-gradient(115deg,
       transparent 0%,
