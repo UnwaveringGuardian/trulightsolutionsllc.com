@@ -1,0 +1,546 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Subcontractors | TruLight Solutions LLC</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<body>
+
+<header>
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <img src="assets/logo.png" alt="TruLight Solutions logo" />
+      <div class="name">TruLight Solutions LLC</div>
+    </a>
+
+    <nav class="links">
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="subcontractors.html">Subcontractors</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+
+<main class="container">
+
+  <section class="page-title subcontractor-intro">
+    <h1>Subcontract with TruLight</h1>
+
+    <p>
+      TruLight Solutions works with experienced aerial fiber construction
+      subcontractors for projects throughout the United States.
+    </p>
+
+    <p>
+      We are interested in building relationships with reliable crews experienced
+      in new-construction aerial fiber, strand installation, fiber placement,
+      make-ready, and related OSP construction.
+    </p>
+
+    <p>
+      Complete the form below to tell us about your crew, experience, equipment,
+      availability, and ability to travel. Our team will review your information
+      and contact you if there is a potential opportunity.
+    </p>
+  </section>
+
+
+  <section class="subcontractor-layout">
+
+    <div class="card subcontractor-form-card">
+
+      <form action="https://formspree.io/f/mwlkqbqn" method="POST">
+
+        <input
+          type="hidden"
+          name="submission_type"
+          value="Subcontractor Crew Interest"
+        />
+
+
+        <!-- CONTACT INFORMATION -->
+
+        <div class="form-section">
+          <h2>Contact Information</h2>
+
+          <div class="form-grid">
+
+            <label>
+              <small>Full Name *</small>
+              <input
+                name="name"
+                type="text"
+                required
+              />
+            </label>
+
+            <label>
+              <small>Company / Business Name</small>
+              <input
+                name="company"
+                type="text"
+              />
+            </label>
+
+            <label>
+              <small>Email *</small>
+              <input
+                name="email"
+                type="email"
+                required
+              />
+            </label>
+
+            <label>
+              <small>Phone Number (optional)</small>
+              <input
+                name="phone"
+                type="tel"
+              />
+            </label>
+
+            <label>
+              <small>City *</small>
+              <input
+                name="city"
+                type="text"
+                required
+              />
+            </label>
+
+            <label>
+              <small>State *</small>
+              <input
+                name="state"
+                type="text"
+                required
+              />
+            </label>
+
+          </div>
+        </div>
+
+
+        <!-- CREW INFORMATION -->
+
+        <div class="form-section">
+          <h2>Crew Information</h2>
+
+          <div class="form-grid">
+
+            <label>
+              <small>How many people are currently in your crew? *</small>
+              <input
+                name="crew_size"
+                type="number"
+                min="1"
+                required
+              />
+            </label>
+
+            <label>
+              <small>How many years of aerial fiber construction experience do you have? *</small>
+              <input
+                name="aerial_fiber_experience"
+                type="number"
+                min="0"
+                required
+              />
+            </label>
+
+            <label>
+              <small>How many years have you worked as a lineman from a bucket? *</small>
+              <input
+                name="bucket_lineman_experience"
+                type="number"
+                min="0"
+                required
+              />
+            </label>
+
+            <label>
+              <small>When could your crew be available to start? *</small>
+              <input
+                name="availability"
+                type="text"
+                placeholder="Example: Immediately, 2 weeks, October 1"
+                required
+              />
+            </label>
+
+          </div>
+        </div>
+
+
+        <!-- EXPERIENCE -->
+
+        <div class="form-section">
+          <h2>Aerial Construction Experience</h2>
+
+          <p class="form-help">
+            Select the types of work your crew has experience performing.
+          </p>
+
+          <div class="checkbox-grid">
+
+            <label class="check-option">
+              <input
+                type="checkbox"
+                name="experience[]"
+                value="New Construction Aerial Fiber"
+              />
+              <span>New-construction aerial fiber</span>
+            </label>
+
+            <label class="check-option">
+              <input
+                type="checkbox"
+                name="experience[]"
+                value="Strand Installation"
+              />
+              <span>Strand installation</span>
+            </label>
+
+            <label class="check-option">
+              <input
+                type="checkbox"
+                name="experience[]"
+                value="Fiber Placement"
+              />
+              <span>Fiber placement</span>
+            </label>
+
+            <label class="check-option">
+              <input
+                type="checkbox"
+                name="experience[]"
+                value="Make Ready"
+              />
+              <span>Make-ready</span>
+            </label>
+
+            <label class="check-option">
+              <input
+                type="checkbox"
+                name="experience[]"
+                value="Overlash"
+              />
+              <span>Overlash</span>
+            </label>
+
+            <label class="check-option">
+              <input
+                type="checkbox"
+                name="experience[]"
+                value="Down Guys and Anchors"
+              />
+              <span>Down guys / anchors</span>
+            </label>
+
+            <label class="check-option">
+              <input
+                type="checkbox"
+                name="experience[]"
+                value="Construction Prints"
+              />
+              <span>Reading construction prints / maps</span>
+            </label>
+
+          </div>
+
+          <label>
+            <small>Describe your aerial fiber construction experience *</small>
+
+            <textarea
+              name="experience_description"
+              placeholder="Tell us about the types of projects you have worked on, your responsibilities, and your crew's capabilities."
+              required
+            ></textarea>
+          </label>
+
+        </div>
+
+
+        <!-- EQUIPMENT -->
+
+        <div class="form-section">
+          <h2>Vehicles & Equipment</h2>
+
+          <label>
+            <small>Do you have your own bucket truck? *</small>
+
+            <select name="bucket_truck" required>
+              <option value="">Select an option</option>
+
+              <option value="Yes - Own Bucket Truck">
+                Yes — I own a bucket truck
+              </option>
+
+              <option value="Access To Bucket Truck">
+                I have access to a bucket truck
+              </option>
+
+              <option value="No Bucket Truck">
+                No — I would need a TruLight-provided truck
+              </option>
+            </select>
+          </label>
+
+
+          <p class="form-help">
+            Select the equipment your crew currently has available.
+          </p>
+
+          <div class="checkbox-grid">
+
+            <label class="check-option">
+              <input
+                type="checkbox"
+                name="equipment[]"
+                value="Bucket Truck"
+              />
+              <span>Bucket truck</span>
+            </label>
+
+            <label class="check-option">
+              <input
+                type="checkbox"
+                name="equipment[]"
+                value="Pickup Truck"
+              />
+              <span>Pickup truck</span>
+            </label>
+
+            <label class="check-option">
+              <input
+                type="checkbox"
+                name="equipment[]"
+                value="Trailer"
+              />
+              <span>Trailer</span>
+            </label>
+
+            <label class="check-option">
+              <input
+                type="checkbox"
+                name="equipment[]"
+                value="Ladders"
+              />
+              <span>Ladders</span>
+            </label>
+
+            <label class="check-option">
+              <input
+                type="checkbox"
+                name="equipment[]"
+                value="Aerial Construction Tools"
+              />
+              <span>Aerial construction tools</span>
+            </label>
+
+            <label class="check-option">
+              <input
+                type="checkbox"
+                name="equipment[]"
+                value="PPE"
+              />
+              <span>PPE</span>
+            </label>
+
+          </div>
+        </div>
+
+
+        <!-- TRAVEL -->
+
+        <div class="form-section">
+          <h2>Travel & Availability</h2>
+
+          <label>
+            <small>Are you willing to travel for projects? *</small>
+
+            <select name="willing_to_travel" required>
+              <option value="">Select an option</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+              <option value="Depends On Project">Depends on the project</option>
+            </select>
+          </label>
+
+          <label>
+            <small>Where are you willing to work?</small>
+
+            <textarea
+              name="work_locations"
+              placeholder="Example: Anywhere in the United States, Northeast, Florida, Maine, New Jersey, etc."
+            ></textarea>
+          </label>
+
+        </div>
+
+
+        <!-- INSURANCE -->
+
+        <div class="form-section">
+          <h2>Insurance</h2>
+
+          <div class="form-grid">
+
+            <label>
+              <small>Do you currently carry commercial general liability insurance?</small>
+
+              <select name="general_liability">
+                <option value="">Select an option</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+                <option value="Can Obtain">Can obtain if required</option>
+              </select>
+            </label>
+
+            <label>
+              <small>Do you have workers' compensation coverage or an applicable exemption?</small>
+
+              <select name="workers_comp">
+                <option value="">Select an option</option>
+                <option value="Coverage">Yes — coverage</option>
+                <option value="Exemption">I have an exemption</option>
+                <option value="No">No</option>
+                <option value="Unsure">Unsure</option>
+              </select>
+            </label>
+
+          </div>
+        </div>
+
+
+        <!-- ADDITIONAL INFORMATION -->
+
+        <div class="form-section">
+          <h2>Additional Information</h2>
+
+          <label>
+            <small>Anything else we should know?</small>
+
+            <textarea
+              name="additional_information"
+              placeholder="Tell us anything else about your crew, experience, equipment, or availability."
+            ></textarea>
+          </label>
+
+        </div>
+
+
+        <!-- ACKNOWLEDGEMENT -->
+
+        <div class="contractor-notice">
+
+          <strong>Independent Contractor Notice</strong>
+
+          <p>
+            Submission of this form does not create an employment relationship,
+            subcontract agreement, or guarantee of work. Subcontractor opportunities
+            are independent contractor opportunities and are subject to TruLight
+            Solutions LLC's qualification, insurance, documentation, project,
+            and contractual requirements.
+          </p>
+
+        </div>
+
+
+        <label class="check-option acknowledgment">
+
+          <input
+            type="checkbox"
+            name="acknowledgment"
+            value="Acknowledged"
+            required
+          />
+
+          <span>
+            I understand that submitting this form does not guarantee work
+            or create a contractual relationship with TruLight Solutions LLC.
+          </span>
+
+        </label>
+
+
+        <button class="btn primary form-submit" type="submit">
+          Submit Subcontractor Information
+        </button>
+
+      </form>
+
+    </div>
+
+  </section>
+
+</main>
+
+
+<footer class="site-footer">
+
+  <div class="container footer-grid">
+
+    <div class="footer-left">
+
+      <div class="footer-brand">
+        <img
+          class="footer-logo"
+          src="assets/logo.png"
+          alt="TruLight Solutions logo"
+        />
+      </div>
+
+      <div class="footer-about">
+
+        <div class="footer-title">
+          TruLight Solutions LLC
+        </div>
+
+        <p>
+          TruLight Solutions supports aerial fiber buildouts with a focus on safety,
+          quality, and clean execution. Built for scale—built for long-term partnerships.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="footer-right">
+
+      <div class="footer-title">
+        Contact
+      </div>
+
+      <a
+        class="footer-link"
+        href="mailto:info@trulightsolutionsllc.com"
+      >
+        info@trulightsolutionsllc.com
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <div class="container footer-bottom">
+    © <span id="y"></span> TruLight Solutions LLC
+  </div>
+
+</footer>
+
+
+<script>
+  document.getElementById('y').textContent =
+    new Date().getFullYear();
+</script>
+
+</body>
+</html>
