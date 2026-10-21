@@ -454,3 +454,50 @@ textarea:focus{
   }
 
 }
+
+/* ========================= */
+/* RESPONSIVE ENHANCEMENTS */
+/* ========================= */
+
+/* Allow the logo and navigation to stack neatly on narrow screens. */
+@media (max-width: 900px){
+  .nav{
+    flex-wrap:wrap;
+  }
+  .links{
+    width:100%;
+    justify-content:center;
+    gap:6px 10px;
+  }
+  .links a{
+    padding:8px 7px;
+  }
+}
+
+@media (max-width: 600px){
+  .brand{
+    min-width:0;
+  }
+  .brand .name{
+    overflow-wrap:anywhere;
+  }
+  .links{
+    justify-content:flex-start;
+  }
+}
+
+/* Comfortable label spacing for general inquiry forms. */
+form > label{
+  display:grid;
+  gap:7px;
+}
+form > label small{
+  display:block;
+}
+
+/* Keep multi-card sections balanced on tablets, including five-card grids. */
+@media (min-width: 701px) and (max-width: 1023px){
+  .grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+}
