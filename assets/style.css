@@ -292,7 +292,7 @@ footer{
 
 .footer-link{
   display: inline-block;
-  color: var(--accent);
+  color: #66C2FF;
   text-decoration: none;
   font-weight: 600;
 }
